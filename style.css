@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    border-bottom: 2px solid #dddd;
+}
+
+.nav h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #6A3166;
+}
+
+.nav h4 {
+    font-size: 1.3vw;
+}
+
+.right button {
+    font-size: 1.2vw;
+}
+
+.right {
+    align-items: center;
+    display:flex;
+    gap: 4vw;
+}
+
+.right i {
+    font-size: 1.5vw;
+    font-weight: 600;
+    display: none;
+}
+
+.content {
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    position: relative;
+} 
+
+
+.left-c {
+    height: 100%;
+    width: 55%;
+    padding: 5vw 5vw;
+}
+
+.left-c h1 {
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+button {
+    font-size: 1.8vw;
+    font-weight: 500;
+    padding: 1vw 2vw;
+    background-color: #385A64;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.left-c span {
+    color: #D268CC;
+}
+
+.left-c p {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+.right-c {
+    height: 100%;
+    width: 45%;
+}
+
+.right-c img {
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width:600px) {
+    .nav {
+        /* background-color: rgb(102, 88, 28); */
+        /* border-bottom: 2px solid rgba(255, 0, 0, 0.867); */
+        color: white;
+        padding: 0 5vw;
+        height: 60px;
+        /* border: none; */
+    }
+
+    .nav h2 {
+        font-size: 6vw;
+        color:#6A3166;
+        font-weight:bolder;
+    }
+
+    .nav h4 {
+        font-size: 3vw;
+        display: none;
+    }
+
+    .right button {
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 6vw;
+        font-weight: 600;
+        color: #D268CC;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .left-c {
+        width: 100%;
+        /* line-height: 0px; */
+    }
+
+    .left-c h1 {
+        font-size: 5vh;
+        line-height: 13vw;
+    }
+
+    .left-c p{
+        font-size: 1.5vh;
+        line-height: 5vw;
+    }
+
+    .left-c button {
+        height: 10vw;
+        width: 35vw;
+        font-size: 6vw;
+    }
+
+
+    .right-c {
+        width: 100%;
+    }
+}
